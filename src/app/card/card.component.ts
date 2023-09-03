@@ -6,9 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
-  constructor(){}
+  produtos: string[] = [];
 
-  ngOnInit(): void {
-      
+  constructor() {
+    this.produtos= [
+      "mouse",
+      "teclado",
+      "cabo",
+      "font",
+      "galaxy book 3-360"
+    ]
   }
+
+  ngOnInit(): void {}
 }
