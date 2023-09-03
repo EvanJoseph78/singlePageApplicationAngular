@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp-atributos.component.css'],
 })
 export class CompAtributosComponent {
+  corFundo: string = 'red';
+  estilo: string = 'enable';
+  corDaFonte: string = 'cyan';
   mudaCor() {
     if (this.estilo == 'enable') {
       this.estilo = 'disable';
@@ -13,5 +16,4 @@ export class CompAtributosComponent {
       this.estilo = 'enable';
     }
   }
-  estilo: string = 'enable';
 }
