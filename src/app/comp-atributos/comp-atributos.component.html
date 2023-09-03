@@ -1,3 +1,14 @@
 <p [ngClass]="estilo">Evan Joseph</p>
 <button (click)="mudaCor()">MudaCor</button>
-<h1 [ngStyle]="{'background': corFundo, 'color':corDaFonte}">Curso Angular</h1>
+<h1 [ngStyle]="{ background: corFundo, color: corDaFonte }">Curso Angular</h1>
+
+<h1>Lista de Compras</h1>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item" />
+<button (click)="adicionarLista()">Adicionar Item</button>
+<p>{{ item }}</p>
+
+<ul>
+  <li *ngFor="let elemento of lista">{{ elemento }}</li>
+</ul>
+<hr />

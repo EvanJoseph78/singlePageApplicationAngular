@@ -9,6 +9,15 @@ export class CompAtributosComponent {
   corFundo: string = 'red';
   estilo: string = 'enable';
   corDaFonte: string = 'cyan';
+  item: string = '';
+  lista: string[] = [];
+
+  constructor() {}
+
+  adicionarLista(){
+    this.lista.push(this.item)
+  }
+
   mudaCor() {
     if (this.estilo == 'enable') {
       this.estilo = 'disable';
