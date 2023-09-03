@@ -11,11 +11,12 @@ export class CompAtributosComponent {
   corDaFonte: string = 'cyan';
   item: string = '';
   lista: string[] = [];
+  isEnableBlock: boolean = true;
 
   constructor() {}
 
-  adicionarLista(){
-    this.lista.push(this.item)
+  adicionarLista() {
+    this.lista.push(this.item);
   }
 
   mudaCor() {
